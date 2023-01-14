@@ -8,9 +8,9 @@ const Banner = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="border-l-8 border-primary"
+                className="border-l-8 border-[#0cbe8c]"
             >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 rounded-xl container mx-auto p-8 bg-white md:p-20">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl container mx-auto p-8 bg-white md:p-20">
                     <div className="flex flex-col justify-center md:justify-start text-center lg:text-left space-y-8">
                         <h1 className="text-3xl md:text-5xl  font-bold text-[#0cbe8c]">
                             We help your company

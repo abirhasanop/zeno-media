@@ -24,7 +24,7 @@ const ClientsSection = () => {
                                 Far far away, behind the word mountains, far from the countries
                                 Vokalia and Consonantia
                             </p>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {clients?.map((data) => (
                                     <Client key={data._id} data={data} />
                                 ))}

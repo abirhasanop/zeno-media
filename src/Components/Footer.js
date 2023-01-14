@@ -1,6 +1,22 @@
 import React from 'react';
+import { toast } from 'react-hot-toast';
 
 const Footer = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const form = e.target
+        const email = form.email.value
+        if (!email) {
+            toast.error("Please Write Your Email On The Field!")
+            return
+        }
+        form.reset()
+        toast.success("Your Email Is Under Review")
+        console.log(email);
+    }
+
+
     return (
         <div className='mt-16'>
             <div className="relative container mx-auto">
@@ -14,7 +30,7 @@ const Footer = () => {
                                 alt=""
                             />
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                             <div className="bg-[#b5ebde] text-left pt-8 pr-4 pb-4 rounded-3xl">
                                 <h1 className="text-[#09805e] text-3xl font-bold border-l-4 border-[#09805e] pl-4">
                                     Company
@@ -40,18 +56,21 @@ const Footer = () => {
                                     Subscribe to our newsletter
                                 </h1>
                                 <div className="pl-4 mt-4">
-                                    <input
-                                        type="text"
-                                        placeholder="Type here"
-                                        className="input w-full max-w-xs pl-4 text-[#0cbe8c] font-bold text-lg text-center"
-                                    />
-                                    <button className="btn bg-[#0cbe8c] border-none hover:bg-[#08a77a] w-full text-white mt-4">Subscribe</button>
+                                    <form onSubmit={handleSubmit}>
+                                        <input
+                                            name='email'
+                                            type="text"
+                                            placeholder="Type Your Email"
+                                            className="input w-full pl-4 text-[#0cbe8c] font-bold text-lg text-center"
+                                        />
+                                        <button className="btn bg-[#0cbe8c] border-none hover:bg-[#08a77a] w-full text-white mt-4">Subscribe</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="border-4 bg-[#0cbe8c43] border-primary w-36 h-36 absolute z-0 top-32 right-0 rounded-2xl"></div>
+                <div className="border-4 bg-[#0cbe8c43] border-[#0cbe8c] w-36 h-36 absolute z-0 top-32 right-0 rounded-2xl"></div>
             </div>
         </div>
     );

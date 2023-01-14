@@ -27,7 +27,7 @@ const FeatureSection = () => {
                                 unaffected and too sentiments her. Rooms he doors there ye aware
                                 in by shall.
                             </p>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                                 {features.map((data) => (
                                     <Feature key={data._id} data={data} />
                                 ))}

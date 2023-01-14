@@ -10,7 +10,7 @@ const OurReachSection = () => {
                     className="w-full object-cover p-20"
                     alt="banner"
                 />
-                <div className="text-left space-y-8 border-l-8 border-primary pl-10 pr-4 md:pl-28">
+                <div className="text-left space-y-8 border-l-8 border-[#0cbe8c] pl-10 pr-4 md:pl-28">
                     <h1 className="text-5xl font-bold text-[#0cbe8c]">Our Reach</h1>
                     <p className="text-[#a7a7a7] font-medium text-lg">
                         Advertising on our platform gives you direct access to the audience
