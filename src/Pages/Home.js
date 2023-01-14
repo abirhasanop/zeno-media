@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutUSSection from '../Components/AboutUsSection';
+import AdvertizeSection from '../Components/AdvertizeSection';
 import Banner from '../Components/Banner';
 import ClientsSection from '../Components/ClientsSection';
 import FeatureSection from '../Components/FeatureSection';
@@ -13,6 +14,7 @@ const Home = () => {
             <OurReachSection />
             <FeatureSection />
             <ClientsSection />
+            <AdvertizeSection />
         </div>
     );
 };
