@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUsSection = () => {
     return (
-        <div className='mt-8'>
+        <div className='mt-16'>
             <div className="relative container mx-auto">
                 <div className="bg-primary w-36 h-36 absolute z-0 top-0 left-0 rounded-2xl"></div>
                 <div className="p-4 md:p-6 relative z-10">

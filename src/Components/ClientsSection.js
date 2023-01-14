@@ -11,7 +11,7 @@ const ClientsSection = () => {
 
 
     return (
-        <div>
+        <div className='mt-16'>
             <div className="relative container mx-auto">
                 <div className="border-4 bg-[#0cbe8c43] border-primary w-36 h-36 absolute z-0 top-20 left-0 rounded-2xl"></div>
                 <div className="p-4 md:p-6 relative z-10">

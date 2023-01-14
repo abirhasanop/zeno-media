@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurReachSection = () => {
     return (
-        <div>
+        <div className='mt-16'>
             <div className="flex flex-col-reverse rounded-xl bg-white pt-20">
                 <img
                     src="https://i.ibb.co/1vsg64f/Group-29-2x.png"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='mt-8'>
+        <div className='mt-16'>
             <div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
