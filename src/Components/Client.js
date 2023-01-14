@@ -13,16 +13,16 @@ const Client = ({ data }) => {
                         </div>
 
                         <div className="flex flex-col">
-                            <h1 className="text-lg text-[#0a805e] font-bold">{data.name}</h1>
-                            <h2 className="text-md text-[#0a805e]">{data.position}</h2>
+                            <h1 className="text-lg text-[#09805e] font-bold">{data.name}</h1>
+                            <h2 className="text-md text-[#09805e]">{data.position}</h2>
                         </div>
                     </div>
-                    <p className="text-primary font-semibold leading-6 text-md px-4">
+                    <p className="text-[#0cbe8c] font-semibold leading-6 text-md px-4">
                         {data.description}
                     </p>
                     <div className="card-actions justify-between items-end mt-4">
                         <img src="https://i.ibb.co/rdPBdv9/Repeat-Grid-1.png" className="w-28" alt="" />
-                        <div className="rounded-full bg-primary w-16 h-16 flex justify-center items-center mr-4 mb-4">
+                        <div className="rounded-full bg-[#0cbe8c] w-16 h-16 flex justify-center items-center mr-4 mb-4">
                             <img
                                 src="https://i.ibb.co/2ZBmD9Z/quotation-mark.png"
                                 className="w-8"

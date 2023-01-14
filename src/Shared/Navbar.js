@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
@@ -8,9 +9,9 @@ const Navbar = () => {
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                            <a href="javascript:void(0)">
+                            <Link className='btn btn-ghost' to="/">
                                 <img src="https://i.ibb.co/tzhCzH5/Image-1-2x.png" className="w-24" alt="" />
-                            </a>
+                            </Link>
                             <div className="md:hidden">
                                 <button
                                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -55,14 +56,19 @@ const Navbar = () => {
                                 }`}
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                                <li className="hover-effect md:w-24 text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-primary">
-                                    <a href="javascript:void(0)">Home</a>
+                                <li>
+                                    <NavLink className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-green-500`} to='/'>
+                                        Home
+                                    </NavLink>
                                 </li>
-                                <li className="md:w-24 text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-primary">
-                                    <a href="javascript:void(0)">Inventory</a>
+                                <li>
+                                    <NavLink className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-green-500`} to='/coming-soon'>Inventory</NavLink>
                                 </li>
-                                <li className="md:w-24 text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-primary">
-                                    <a href="javascript:void(0)">Checkout</a>
+                                <li>
+                                    <NavLink
+                                        className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-green-500`} to='/*'>
+                                        Checkout
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
