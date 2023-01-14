@@ -57,16 +57,16 @@ const Navbar = () => {
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li>
-                                    <NavLink className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-green-500`} to='/'>
+                                    <NavLink className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] px-6 p-2 rounded-lg hover:text-green-500`} to='/'>
                                         Home
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-green-500`} to='/coming-soon'>Inventory</NavLink>
+                                    <NavLink className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] px-6 p-2 rounded-lg hover:text-green-500`} to='/coming-soon'>Inventory</NavLink>
                                 </li>
                                 <li>
                                     <NavLink
-                                        className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] p-2 rounded-lg hover:text-green-500`} to='/*'>
+                                        className={({ isActive }) => `${isActive ? "bg-[#0cbe8c43] text-green-500" : ""} text-black font-semibold hover:bg-[#0cbe8c43] px-6 p-2 rounded-lg hover:text-green-500`} to='/*'>
                                         Checkout
                                     </NavLink>
                                 </li>
